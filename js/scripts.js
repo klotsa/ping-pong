@@ -1,13 +1,11 @@
 //back-end
 
-
-
+var outputArray = [];
 var numeral = function(numeralInput) {
 //var numeralInput = 7; //test, replace below:
 inputArray = numeralInput;
-alert(inputArray);
-var inputArray = [];
-var outputArray = [];
+//alert(inputArray);
+
 var pingPong = ["ping", "pong", "ping-pong"];
 //number check
 if (numeralInput < 1) {
@@ -27,8 +25,12 @@ for (var index = 1; index <= numeralInput; index++) {
     } else {
     outputArray.push(index)
     }
+    //alert(outputArray);
   }
-  alert(outputArray);
+//alert(outputArray);
+  for (var i = 0; i < outputArray.length; i++)
+    $("#result").text(outputArray[i]);
+    //document.write(outputArray[i] + " ");
 };
 
 
@@ -39,9 +41,9 @@ $(document).ready(function() {
   $("form#numeral").submit(function(event) {
     event.preventDefault();
     var numeralInput = $("input#numeral").val();
- 
+
     var result = numeral(numeralInput);
-//     // $("#result").text(outputFinal);
+    $("#result").text(outputArray + " ");
     $("#result").show();
 //     // console.log(outputFinal);
 //     // $("#noresult").text(result);
