@@ -14,9 +14,9 @@ display: none;
   text-align: center;
 }
 
-#result, .container {
+#result, .container, .btn, .intro {
   padding: 30px;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 ul, .intro {
