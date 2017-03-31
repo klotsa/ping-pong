@@ -2,7 +2,7 @@
 display: none;
 }
 
-.header {
+.header, .btn {
   text-align: center;
   color: white;
   background-color: teal;
@@ -13,7 +13,7 @@ display: none;
   text-align: center;
 }
 
-#result, .container, .btn, .intro, .col-4, .col-8 {
+#result, .container, .btn, .intro, {
   padding: 30px;
   font-size: 1.2em;
 }
@@ -24,4 +24,5 @@ ul, .intro {
 
 #about {
   padding: 20px;
+  font-size: 1.2em;
 }

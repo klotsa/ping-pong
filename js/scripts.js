@@ -36,7 +36,6 @@ $(document).ready(function() {
     event.preventDefault();
     var numeralInput = $("input#numeral").val();
     var result = numeral(numeralInput);
-   //  $("#result").text(results);
     $("#result").show();
     // console.log(outputFinal);
   });
