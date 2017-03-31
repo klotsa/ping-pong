@@ -6,40 +6,32 @@
 
 ## Description
 
-_It will take a user's input from 1 to 3999 and return a Roman numeral with the same value_
+_It will take a user's input  and return a range of numbers from 1 to the chosen number with the following exceptions:
+
+Numbers divisible by 3 are replaced with "ping"
+Numbers divisible by 5 are replaced with "pong"
+Numbers divisible by 15 are replaced with "ping-pong"_
 
 _Behavior_
-_Digits from 0-3 are represented with that number of the Roman numeric symbol_
-_Input_
-_3_
-_Expected output_
-_III_
-_Behavior_
-_Digit equal to 4 is represented the two corresponding symbols from romanArray_
+_Digits divisible by 3 are replaced with "ping"_
 _Input_
 _4_
 _Expected output_
-_IV_
+_1, 2, ping, 4_
 _Behavior_
-_Digits from 5-8 are represented with the corresponding symbol for 5, followed by a number of the other corresponding symbols based on the difference between the input and the number 5_
+_Digits go through the for loop that checks the divisibility of each by 3 until it reaches the number provided by a user. Then "ping" is put into the outputArray _
 _Input_
-_7_
+_5_
 _Expected output_
-_VII_
+_1, 2, ping, 4, pong_
 _Behavior_
-_Digit equal to 9 is represented by the two corresponding symbols from the romanArray_
+_Digits go through the for loop that checks the divisibility of each by 5 until it reaches the number provided by a user. Then "pong" is put into the outputArray _
 _Input_
-_9_
+_15_
 _Expected output_
-_IX_
+_1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong_
 _Behavior_
-_For numbers with multiple digits, the corresponding Roman numerals are adjusted_
-_Input_
-_90_
-_Expected output_
-_XC_
-
-
+_Digits go through the for loop that checks the divisibility of each by 15 (5x3) until it reaches the number provided by a user. Then "ping-pong" is put into the outputArray_
 
 
 ## Setup/Installation Requirements

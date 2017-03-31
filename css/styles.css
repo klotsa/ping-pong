@@ -7,7 +7,6 @@ display: none;
   color: white;
   background-color: teal;
   padding: 30px;
-
 }
 
 #numeral, #product, #about {
@@ -16,14 +15,13 @@ display: none;
 
 #result, .container, .btn, .intro, .col-4, .col-8 {
   padding: 30px;
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 ul, .intro {
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 #about {
-
   padding: 20px;
 }
