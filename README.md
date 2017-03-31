@@ -13,25 +13,24 @@ Numbers divisible by 5 are replaced with "pong"
 Numbers divisible by 15 are replaced with "ping-pong"_
 
 _Behavior_
-_Digits divisible by 3 are replaced with "ping"_
+_Digits go through the for loop that checks the divisibility of each by 3 until it reaches the number provided by a user. Then "ping" is put into the outputArray _
 _Input_
 _4_
 _Expected output_
 _1, 2, ping, 4_
 _Behavior_
-_Digits go through the for loop that checks the divisibility of each by 3 until it reaches the number provided by a user. Then "ping" is put into the outputArray _
+_Digits go through the for loop that checks the divisibility of each by 5 until it reaches the number provided by a user. Then "pong" is put into the outputArray _
 _Input_
 _5_
 _Expected output_
 _1, 2, ping, 4, pong_
 _Behavior_
-_Digits go through the for loop that checks the divisibility of each by 5 until it reaches the number provided by a user. Then "pong" is put into the outputArray _
+_Digits go through the for loop that checks the divisibility of each by 15 (5x3) until it reaches the number provided by a user. Then "ping-pong" is put into the outputArray_
 _Input_
 _15_
 _Expected output_
 _1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong_
-_Behavior_
-_Digits go through the for loop that checks the divisibility of each by 15 (5x3) until it reaches the number provided by a user. Then "ping-pong" is put into the outputArray_
+
 
 
 ## Setup/Installation Requirements
