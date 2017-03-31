@@ -13,16 +13,20 @@ display: none;
   text-align: center;
 }
 
-#result, .container, .btn, .intro, {
+.btn {
+  font-size: 1.5em;
+}
+
+#result, .container, .intro, {
   padding: 30px;
-  font-size: 1.2em;
+  font-size: 1.25em;
 }
 
 ul, .intro {
-  font-size: 1.2em;
+  font-size: 1.25em;
 }
 
 #about {
   padding: 20px;
-  font-size: 1.2em;
+  font-size: 1.25em;
 }
