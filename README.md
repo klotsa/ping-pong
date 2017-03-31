@@ -1,6 +1,6 @@
 # _Ping-Pong_
 
-#### _It will give a list of numerals based on the input, 3-31-17_
+#### _Will give a list of numerals mixed with "ping", "pong", and "ping-pong" based on the input, 3-31-17_
 
 #### By _**Anatoliy Klots**_
 
@@ -36,8 +36,10 @@ _Digits go through the for loop that checks the divisibility of each by 15 (5x3)
 
 ## Setup/Installation Requirements
 
+* _https://github.com/klotsa/ping-pong_
 * _Clone for github_
 * _Open in Chrome_
+
 
 
 
