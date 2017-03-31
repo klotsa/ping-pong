@@ -1,49 +1,38 @@
 //back-end
-var outputFinal = [];
+// var numeral = function(numeralInput) {
+// if (numeral < 1) {
+//   alert("We can't play )-:");
+//   } else {
+//   alert("Y");
+//   }
+//
+// };
+
+
 var numeral = function(numeralInput) {
-if (numeralInput < 1 || numeralInput > 3999) {
-    alert("no!");
-   } else {
-    // alert("Cool!")
-    console.log(typeof numeralInput);
-    var inputArray = numeralInput.split("");
-    var romanArray = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
-    var output = [];
-    // var outputFinal = [];
-    console.log(inputArray);
-    for (var index = inputArray.length-1; index >= 0; index--) {
-      var indexRoman = ((inputArray.length-(index+1))*2);
-      var digit = parseInt(inputArray[index]);
-      if (digit > 0 && digit < 4) {
-        for (i = 0; i < digit; i++) {
-          output.unshift(romanArray[indexRoman]);
-          outputFinal = output.join("");
-          console.log(outputFinal);
-        } //digit for loop
-      } //0-3 branch
-      else if (digit === 4) {
-        output.unshift(romanArray[indexRoman], romanArray[indexRoman + 1]);
-        outputFinal = output.join("");
-        console.log(outputFinal);
-      }
-      else if (digit > 4 && digit < 9) {
-          output.unshift(romanArray[indexRoman + 1]);
-          for (i = 0; i < digit - 5; i++) {
-            output.unshift(romanArray[indexRoman]);
-          } //digit for loop
-          outputFinal = output.join("");
-          console.log(outputFinal);
-      } //5-8 branch
-      else if (digit === 9) {
-            output.unshift(romanArray[indexRoman], romanArray[indexRoman + 2]);
-            outputFinal = output.join("");
-            console.log(outputFinal);
-      } //9 branch
-    } //array for loop
+var numeralInput = 7; //test, replace below:
+//inputArray = numeralInput;
+alert(inputArray);
+var inputArray = [];
+var outputArray = [];
+var pingPong = ["ping", "pong", "ping-pong"];
+//number check
+if (numeralInput < 1) {
+  alert("We can't play )-:");
+  } else {
+  alert("got a nimber");
+} //end of number check
 
-
-  }
+//
+// for (var index = 1; index <= numeralInput; index += 1) {
+//  if (index % 3 === 0) {
+//  alert("ping");
+//  } else {
+//  alert(index);
+//  }
 };
+
+
 
 //UI
 
@@ -51,17 +40,19 @@ $(document).ready(function() {
   $("form#numeral").submit(function(event) {
     event.preventDefault();
     var numeralInput = $("input#numeral").val();
-    console.log(numeralInput);
-    // if (numeralInput < 1 || numeralInput > 3999) {
-    //     alert("no!");
-    //    } else {
-    //     alert("Cool!")
-    //   }
-
+    // alert(numeralInput);
+//
+//
+//     if (numeralInput < 1) {
+//       alert("We can't play )-:");
+//       } else {
+//       alert("Y");
+//       }
+//
     var result = numeral(numeralInput);
-    $("#result").text(outputFinal);
+//     // $("#result").text(outputFinal);
     $("#result").show();
-    // console.log(outputFinal);
-    // $("#noresult").text(result);
+//     // console.log(outputFinal);
+//     // $("#noresult").text(result);
   });
 });

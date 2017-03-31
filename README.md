@@ -1,8 +1,8 @@
-# _Cnverter to Roman Numerals_
+# _Ping-Pong_
 
-#### _It will convert a number into a Roman numeral, 3-30-17_
+#### _It will give a list of numerals based on the input, 3-31-17_
 
-#### By _**Ilene Gorski && Anatoliy Klots**_
+#### By _**Anatoliy Klots**_
 
 ## Description
 
@@ -51,7 +51,7 @@ _XC_
 
 ## Known Bugs
 
-_Due to the Roman numeric system, there is no 0, negatives, or numbers above 3999. Not tested in Safari and IE_
+_Not tested in Safari and IE_
 
 ## Support and contact details
 
@@ -65,4 +65,4 @@ _HTML, CSS, JS, Jquery, Bootstrap_
 
 *MIT*
 
-Copyright (c) 2017 **_Ilene & Anatoliy_**
+Copyright (c) 2017 **_Anatoliy_**
