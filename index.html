@@ -9,9 +9,12 @@
   </head>
   <body>
     <div class="container">
-      <h1>PING-PONG</h1>
-      <h3>A Game of the  Infinite Joy</h3>
-      <p>It takes a number and returns a range of numbers from 1 to the chosen number with the following exceptions:
+      <div class="header">
+       <h3>A Game of the  Infinite Joy</h3>
+       <h1>PING-PONG</h1> 
+       <h3>Prepare to Be Amazed</h3>
+      </div>
+      <p class="intro">It takes a number and returns a range of numbers from 1 to the chosen number with the following exceptions:
       <ul>
         <li>Numbers divisible by 3 are replaced with "ping"
         <li>Numbers divisible by 5 are replaced with "pong"
@@ -19,16 +22,14 @@
       </ul>
       <form id="numeral">
         <div class="form-group">
-          <label for="numeral">Enter a number:</label>
+          <label for="numeral">Enter a number and indulge:</label><br>
           <input id="numeral" type="number">
         </div>
         <button type="submit" class="btn">Ping-pong!</button>
       </form>
-      <div>
+      <div id="product">
         <p id="result"></p>
       </div>
-      <div id="resultDiv"></div>
 
-    </div>
   </body>
 </html>

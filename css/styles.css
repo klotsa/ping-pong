@@ -1,4 +1,24 @@
 #result {
 display: none;
+}
 
+.header {
+  text-align: center;
+  color: white;
+  background-color: teal;
+  padding: 30px;
+
+}
+
+#numeral, #product {
+  text-align: center;
+}
+
+#result, .container {
+  padding: 30px;
+  font-size: 1.5em;
+}
+
+ul, .intro {
+  font-size: 1.25em;
 }
